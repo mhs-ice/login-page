@@ -118,6 +118,7 @@ signupForm.addEventListener('submit', (e) => {
 
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
 
     auth.createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {
